@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meine erste Webseite 🎉</title>
+    <meta
+      name="description"
+      content="Hallo! Das ist meine erste eigene Webseite."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="top">
+    <a class="skip-link" href="#start">Zum Inhalt springen</a>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="kicker">Hi! Ich bin</p>
+
+        <h1>Maria <span class="wave">✨</span></h1>
+
+        <p class="sub">
+          Willkommen auf meiner ersten eigenen Webseite. Ich lerne gerade
+          <strong>HTML</strong> &amp; <strong>CSS</strong>. Schau dich um!
+        </p>
+
+        <nav class="hero-nav" aria-label="Seitennavigation">
+          <a class="pill" href="#ueber-mich">Über mich</a>
+          <a class="pill" href="#lieblings-emoji">Lieblings-Emoji</a>
+          <a class="pill" href="#mochte-ich">Was ich mag</a>
+          <a class="pill" href="#projekte">Projekte</a>
+        </nav>
+
+        <p class="hero-cta">
+          <a class="btn btn-hero" href="#style-mich">Los geht’s ✨</a>
+        </p>
+      </div>
+    </header>
+
+    <!-- FLOATING STYLE BUTTON -->
+    <details class="magic magic-fab" id="style-mich">
+      <summary class="fab-btn" aria-label="Style mich" title="Style mich">
+        💅
+      </summary>
+
+      <div class="magic-panel" aria-label="Style-Bedienfeld">
+        <!-- Emoji -->
+        <div class="magic-row" role="group" aria-label="Emoji auswählen">
+          <span class="magic-label">Emoji</span>
+
+          <input class="sr" type="radio" name="emo" id="emo-wave" checked />
+          <label
+            class="magic-chip magic-chip-emoji"
+            for="emo-wave"
+            data-emoji="👋"
+            >👋</label
+          >
+
+          <input class="sr" type="radio" name="emo" id="emo-sparkle" />
+          <label
+            class="magic-chip magic-chip-emoji"
+            for="emo-sparkle"
+            data-emoji="✨"
+            >✨</label
+          >
+
+          <input class="sr" type="radio" name="emo" id="emo-heart" />
+          <label
+            class="magic-chip magic-chip-emoji"
+            for="emo-heart"
+            data-emoji="💖"
+            >💖</label
+          >
+
+          <input class="sr" type="radio" name="emo" id="emo-unicorn" />
+          <label
+            class="magic-chip magic-chip-emoji"
+            for="emo-unicorn"
+            data-emoji="🦄"
+            >🦄</label
+          >
+
+          <input class="sr" type="radio" name="emo" id="emo-cat" />
+          <label
+            class="magic-chip magic-chip-emoji"
+            for="emo-cat"
+            data-emoji="🐱"
+            >🐱</label
+          >
+        </div>
+
+        <!-- Emoji-Effekt -->
+        <div class="magic-row" role="group" aria-label="Emoji-Effekt auswählen">
+          <span class="magic-label">Emoji-Effekt</span>
+
+          <input class="sr" type="radio" name="fx" id="fx-wiggle" checked />
+          <label class="magic-chip magic-chip-text" for="fx-wiggle"
+            >wackeln</label
+          >
+
+          <input class="sr" type="radio" name="fx" id="fx-soft" />
+          <label class="magic-chip magic-chip-text" for="fx-soft">sanft</label>
+
+          <input class="sr" type="radio" name="fx" id="fx-bounce" />
+          <label class="magic-chip magic-chip-text" for="fx-bounce"
+            >hüpfen</label
+          >
+        </div>
+
+        <!-- Hintergrund -->
+        <div class="magic-row" role="group" aria-label="Hintergrund auswählen">
+          <span class="magic-label">Hintergrund</span>
+
+          <input class="sr" type="radio" name="bg" id="bg-unicorn" checked />
+          <label class="magic-chip magic-chip-text" for="bg-unicorn"
+            >Einhorn</label
+          >
+
+          <input class="sr" type="radio" name="bg" id="bg-ocean" />
+          <label class="magic-chip magic-chip-text" for="bg-ocean">Meer</label>
+
+          <input class="sr" type="radio" name="bg" id="bg-sunset" />
+          <label class="magic-chip magic-chip-text" for="bg-sunset"
+            >Sonnenuntergang</label
+          >
+        </div>
+      </div>
+    </details>
+
+    <main id="start" class="container">
+      <section id="ueber-mich" class="section">
+        <h2 class="section-title">Über mich 🧑‍💻</h2>
+
+        <p class="lead">
+          Ich bin 11 Jahre alt und ich liebe es, kreativ zu sein: malen,
+          basteln, Dinge ausprobieren und Neues lernen. Im Kurs habe ich
+          angefangen, mit
+          <strong>HTML</strong> und <strong>CSS</strong> zu experimentieren –
+          und es macht richtig Spaß, weil man sofort sieht, was man gebaut hat.
+        </p>
+
+        <div class="sticker-grid">
+          <figure class="sticker tilt-l">
+            <img
+              src="bilder/paint.jpg"
+              alt="Pinsel und bunte Farbe auf Papier"
+            />
+            <figcaption>Ich liebe malen 🎨</figcaption>
+          </figure>
+
+          <figure class="sticker tilt-r">
+            <img
+              src="bilder/scratch.jpeg"
+              alt="Schreibtisch mit Laptop und anderen Gegenständen"
+            />
+            <figcaption>Hierin bin ich richtig gut 🧩</figcaption>
+          </figure>
+        </div>
+
+        <p class="helper">
+          <strong>Meine Superkraft:</strong> Ich bleibe dran, auch wenn etwas
+          nicht gleich klappt.
+        </p>
+      </section>
+
+      <section id="lieblings-emoji" class="section">
+        <h2 class="section-title">Mein Lieblings-Emoji ✨</h2>
+
+        <div class="special">
+          <div class="special-inner">
+            <p class="special-kicker">Mein aktuelles Lieblings-Emoji:</p>
+
+            <div
+              class="special-emoji"
+              id="favEmoji"
+              aria-label="Lieblings-Emoji"
+            >
+              👋
+            </div>
+
+            <button class="btn btn-rain" type="button" id="rainBtn">
+              Lass es regnen! 🌧️
+            </button>
+
+            <p class="special-hint">
+              <em
+                >Tipp: Du kannst dein Lieblings-Emoji oben auf der Seite
+                ändern.</em
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="mochte-ich" class="section">
+        <h2 class="section-title">Was ich mag ⭐</h2>
+
+        <ul class="chip-list" aria-label="Meine Lieblingsdinge">
+          <li>🐶 Tiere</li>
+          <li>🧩 Rätsel</li>
+          <li>🎵 Musik</li>
+          <li>🍓 Erdbeeren</li>
+          <li>🕹️ Spiele</li>
+          <li>🌍 Natur</li>
+        </ul>
+
+        <p class="helper">
+          <em
+            >Mehr Ideen: Lieblingsfarbe • Lieblingsessen • Lieblingssong •
+            Lieblingsbuch • Lieblingstier.</em
+          >
+        </p>
+      </section>
+
+      <section id="projekte" class="section">
+        <h2 class="section-title">Meine Projekte 🛠️</h2>
+
+        <p class="lead">
+          Im Kurs habe ich schon richtig viel ausprobiert. Hier sind ein paar
+          Dinge, die ich gebaut oder geübt habe.
+        </p>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Meine erste Webseite</h3>
+            <p>
+              Ich habe eine Seite mit Überschriften, Texten, Links und Bildern
+              gebaut.
+            </p>
+            <span class="badge">HTML</span>
+          </article>
+
+          <article class="card">
+            <h3>Farben &amp; Styles</h3>
+            <p>
+              Ich habe Farben geändert, Abstände angepasst und Buttons
+              gestaltet.
+            </p>
+            <span class="badge">CSS</span>
+          </article>
+
+          <article class="card">
+            <h3>Listen &amp; Lieblingsdinge</h3>
+            <p>
+              Ich habe Listen gestaltet und Emojis benutzt – ordentlich und
+              verspielt.
+            </p>
+            <span class="badge">Design</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="danke" class="section">
+        <h2 class="section-title">Danke! 🙌</h2>
+        <p class="lead">
+          Danke an meinen Kurs und alle, die mir geholfen haben. Ich bin stolz
+          auf meine erste Seite!
+        </p>
+        <p><a class="back-to-top" href="#top">Zurück nach oben ⬆️</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© 2025 von Maria – selbst gebaut mit HTML &amp; CSS.</small>
+      </div>
+    </footer>
+
+    <script>
+      /*
+        1) Auswahl lesen (Emoji / Emoji-Effekt / Hintergrund)
+        2) data-Attribute am <html> setzen (CSS kann Theme wechseln)
+        3) Speichern in localStorage
+        4) Emoji-Regen (Kids können hier Zahlen ändern!)
+      */
+
+      const STORAGE_KEY = "style_mich_settings_v7";
+      const favEmojiEl = document.getElementById("favEmoji");
+      const rainBtn = document.getElementById("rainBtn");
+
+      const groups = {
+        emo: 'input[name="emo"]',
+        fx: 'input[name="fx"]',
+        bg: 'input[name="bg"]',
+      };
+
+      function getCheckedInput(selector) {
+        return document.querySelector(selector + ":checked");
+      }
+
+      function getSelectedEmoji() {
+        const checked = getCheckedInput(groups.emo);
+        if (!checked) return "👋";
+        const label = document.querySelector(`label[for="${checked.id}"]`);
+        return label?.dataset.emoji || "👋";
+      }
+
+      function applySettingsToPage() {
+        const fxId = getCheckedInput(groups.fx)?.id || "fx-wiggle";
+        const bgId = getCheckedInput(groups.bg)?.id || "bg-unicorn";
+
+        const fxName =
+          fxId === "fx-soft"
+            ? "soft"
+            : fxId === "fx-bounce"
+            ? "bounce"
+            : "wiggle";
+
+        const bgName =
+          bgId === "bg-ocean"
+            ? "ocean"
+            : bgId === "bg-sunset"
+            ? "sunset"
+            : "unicorn";
+
+        document.documentElement.dataset.fx = fxName;
+        document.documentElement.dataset.bg = bgName;
+
+        const emoji = getSelectedEmoji();
+        favEmojiEl.textContent = emoji;
+        document.documentElement.style.setProperty(
+          "--wave-emoji",
+          `"${emoji}"`
+        );
+      }
+
+      function saveSettings() {
+        const data = {
+          emo: getCheckedInput(groups.emo)?.id,
+          fx: getCheckedInput(groups.fx)?.id,
+          bg: getCheckedInput(groups.bg)?.id,
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      }
+
+      function loadSettings() {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return;
+        try {
+          const data = JSON.parse(raw);
+          if (data.emo) document.getElementById(data.emo).checked = true;
+          if (data.fx) document.getElementById(data.fx).checked = true;
+          if (data.bg) document.getElementById(data.bg).checked = true;
+        } catch (e) {}
+      }
+
+      // ======================================================
+      // EMOJI-REGEN: HIER KÖNNT IHR ETWAS SELBER ÄNDERN ✅
+      // ======================================================
+      const RAIN_SETTINGS = {
+        totalTime: 4200, // Wie lange es regnet (in Millisekunden)
+        spawnEvery: 140, // Wie oft neue Emojis kommen (größer = weniger Emojis)
+        waveCount: 8, // Wie viele Emojis pro "Welle" erscheinen
+        sizeMin: 48, // Mindest-Größe
+        sizeVar: 42, // Extra-Größe zufällig dazu
+      };
+      // Tipp: Mehr Regen = waveCount höher ODER spawnEvery kleiner.
+      // Tipp: Weniger Regen = waveCount kleiner ODER spawnEvery größer.
+
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+      let rainOverlay = null;
+      let rainTimer = null;
+
+      function startEmojiRain(emoji) {
+        if (reduceMotion) return;
+
+        if (!rainOverlay) {
+          rainOverlay = document.createElement("div");
+          rainOverlay.className = "emoji-rain";
+          document.body.appendChild(rainOverlay);
+        }
+
+        if (rainTimer) {
+          clearInterval(rainTimer);
+          rainTimer = null;
+        }
+
+        const endAt = Date.now() + RAIN_SETTINGS.totalTime;
+
+        function spawnWave() {
+          if (Date.now() > endAt) {
+            clearInterval(rainTimer);
+            rainTimer = null;
+            return;
+          }
+
+          for (let i = 0; i < RAIN_SETTINGS.waveCount; i++) {
+            const drop = document.createElement("span");
+            drop.className = "emoji-drop";
+            drop.textContent = emoji;
+
+            const x = Math.random() * 100;
+            const size =
+              RAIN_SETTINGS.sizeMin + Math.random() * RAIN_SETTINGS.sizeVar;
+            const dur = 2000 + Math.random() * 900; // auch etwas kürzer als vorher
+            const drift = (Math.random() * 2 - 1) * 110;
+
+            drop.style.left = x + "vw";
+            drop.style.fontSize = size + "px";
+            drop.style.animationDuration = dur + "ms";
+            drop.style.setProperty("--drift", drift + "px");
+
+            drop.addEventListener("animationend", () => drop.remove());
+            rainOverlay.appendChild(drop);
+          }
+        }
+
+        spawnWave();
+        rainTimer = setInterval(spawnWave, RAIN_SETTINGS.spawnEvery);
+      }
+
+      // Start
+      loadSettings();
+      applySettingsToPage();
+
+      document.addEventListener("change", (event) => {
+        const t = event.target;
+        if (t && t.matches('input[type="radio"]')) {
+          applySettingsToPage();
+          saveSettings();
+        }
+      });
+
+      rainBtn.addEventListener("click", () => {
+        startEmojiRain(getSelectedEmoji());
+      });
+    </script>
+  </body>
+</html>

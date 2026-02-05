@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="utf-8" />
@@ -33,7 +33,7 @@
         </nav>
 
         <p class="hero-cta">
-          <a class="btn btn-hero" href="#style-mich">Los geht’s ✨</a>
+          <a class="btn btn-hero" href="#ueber-mich">Los geht’s ✨</a>
         </p>
       </div>
     </header>
@@ -304,15 +304,15 @@
           fxId === "fx-soft"
             ? "soft"
             : fxId === "fx-bounce"
-            ? "bounce"
-            : "wiggle";
+              ? "bounce"
+              : "wiggle";
 
         const bgName =
           bgId === "bg-ocean"
             ? "ocean"
             : bgId === "bg-sunset"
-            ? "sunset"
-            : "unicorn";
+              ? "sunset"
+              : "unicorn";
 
         document.documentElement.dataset.fx = fxName;
         document.documentElement.dataset.bg = bgName;
@@ -321,7 +321,7 @@
         favEmojiEl.textContent = emoji;
         document.documentElement.style.setProperty(
           "--wave-emoji",
-          `"${emoji}"`
+          `"${emoji}"`,
         );
       }
 
@@ -359,7 +359,7 @@
       // Tipp: Weniger Regen = waveCount kleiner ODER spawnEvery größer.
 
       const reduceMotion = window.matchMedia(
-        "(prefers-reduced-motion: reduce)"
+        "(prefers-reduced-motion: reduce)",
       ).matches;
       let rainOverlay = null;
       let rainTimer = null;
